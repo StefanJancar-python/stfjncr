@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block content %}
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">   
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><div class="container">
+        <img class="img-fluid mb-3 mb-lg-0" src="static/assets/img/logo.png" alt="LOGO" />
+    </div></a> 
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                   
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#clanky">Články</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('routes.uvod') }}">Domov</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!-- Články-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Biohackeri</h1>
+                    <h2 class="text-blue-50 mx-auto mt-2 mb-5">Ako sa biohackeri snažia vylepšiť svoj mozog, svoje telá a ľudskú prirodzenosť.</h2>
+                    <a class="btn btn-info js-scroll-trigger" href="#clanky">Dozvedieť sa viac!</a>
+                </div>
+            </div>
+        </header>
+        <!-- O MNE-->
+        <section class="about-section text-center" id="clanky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-blue mb-4">Aj keď ste pojem „biohacking“ predtým nepočuli, pravdepodobne ste sa už s jeho verziou stretli.</h2>
+                        <p class="text-blue-50">
+                            Možno ste videli výkonného riaditeľa Twitteru Jacka Dorseyho, ktorý vychvaľuje výhody prerušovaného pôstu a pitia „slaného džúsu“ každé ráno. Možno ste už čítali o bývalom zamestnancovi NASA Josiahovi Zaynerovi, ktorý si injekčne vpichoval DNA pomocou technológie na úpravu génov CRISPR. Možno ste už počuli o ľuďoch z oblasti Bay Area, ktorí sa zúčastňujú „dopamínového pôstu“.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="static/assets/img/dna.png" alt="" />
+            </div>
+<hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+            <h4><p class="text-blue-50">Možno máte rovnako ako ja kolegu, ktorý mal v ruke implantovaný čip.
+
+Jedná sa o všetky typy biohackingu, čo je všeobecný výraz pre životný štýl, ktorý je čoraz populárnejší, a to nielen v Silicon Valley, kde sa to skutočne rozbehlo.
+
+Biohacking - tiež známy ako kutilská biológia - je mimoriadne široký a amorfný pojem, ktorý môže pokrývať širokú škálu aktivít, od vykonávania vedeckých experimentov na kvasinkách alebo iných organizmoch, cez sledovanie vlastného spánku a stravovania až po zmenu vlastnej biológie načerpaním energie mladšej osoby. krv do žíl v nádeji, že bude bojovať proti starnutiu. (Áno, je to skutočná vec a nazýva sa to mladá transfúzia krvi. O tom neskôr.)
+
+Najznámejším typom biohackerov sú v súčasnosti tí, ktorí experimentujú - mimo tradičných laboratórnych priestorov a inštitúcií - na vlastných telách s nádejou na zvýšenie ich fyzického a kognitívneho výkonu. Tvoria jednu vetvu transhumanizmu, hnutia, ktoré si myslí, že ľudské bytosti môžu a mali by používať technológiu na rozšírenie a vývoj nášho druhu.</p>
+<p>Niektorí biohackeri majú vedecké hodnosti PhD; iní sú úplní amatéri. A ich spôsoby pokusu o hacknutie biológie sú také rozmanité, ako sú. Môže byť zložité pochopiť rôzne typy hackov, čo ich odlišuje od tradičnej medicíny a aké bezpečné alebo legálne sú.</p>
+<p>1) V prvom rade čo je to vlastne biohacking? Aké sú jej bežné príklady?
+
+V závislosti od toho, koho sa pýtate, dostanete inú definíciu biohackingu. Pretože to môže zahŕňať závratnú škálu aktivít, budem sa väčšinou zaoberať biohackingom definovaným ako pokus manipulovať s vaším mozgom a telom za účelom optimalizácie výkonu, mimo sféry tradičnej medicíny. Ale neskôr poskytnem prehľad aj o niektorých ďalších druhoch biologického hackingu (vrátane tých, ktoré môžu viesť k neuveriteľnému umeniu).</p>
+<p>Dave Asprey, biohacker, ktorý vytvoril doplnkovú spoločnosť Bulletproof, mi povedal, že pre neho je biohacking „umenie a veda meniť prostredie okolo vás a vo vašom vnútri tak, aby ste mali úplnú kontrolu nad svojou vlastnou biológiou.“ Je veľmi experimentálnym hráčom na svojom tele: má vpichované kmeňové bunky do kĺbov, denne užíva desiatky doplnkov výživy, kúpele v infračervenom svetle a oveľa viac. Všetko je súčasťou jeho snahy žiť aspoň do veku 180 rokov.
+
+Jedno slovo, ktoré Asprey veľmi rád používa, je „kontrola“. Tento jazyk je typický pre mnohých biohackerov, ktorí často hovoria o „optimalizácii“ a „zdokonalení“ svojich myslí a tiel.
+
+Niektoré z ich techník na dosiahnutie tohto sú veci, ktoré ľudia robia už celé storočia, napríklad meditácia vo Vipassane a prerušovaný pôst. Oba sú súčasťou Dorseyovej rutiny, ktorú podrobne uviedol v rozhovore pre podcast. Snaží sa robiť dve hodiny meditácie denne a počas pracovných dní zje iba jedno jedlo (večeru); cez vikendy neje vobec. (Kritici sa obávajú, že jeho stravovacie návyky znejú trochu ako porucha stravovania alebo že by mohli neúmyselne ovplyvniť ostatných, aby sa u nich vyvinula porucha.) Každé ráno tiež odštartuje ľadový kúpeľ a potom prejde asi 8 km na ústredie Twitteru.</p>
+<p>Potom existujú niektoré z radikálnejších postupov: kryoterapia (úmyselné ochladenie), neurofeedback (tréning na reguláciu mozgových vĺn), infračervené sauny (údajne vám pomôžu uniknúť stresu z elektromagnetického vysielania) a virtuálne plavákové nádrže ( ktoré sú určené na vyvolanie meditačného stavu prostredníctvom zmyslovej deprivácie), okrem iných. Niektorí ľudia minú za tieto liečby státisíce dolárov.
+
+Podskupina biohackerov nazývaných mlynčeky zachádzajú tak ďaleko, že do svojich tiel implantujú zariadenia, ako sú počítačové čipy. Implantáty im umožňujú robiť všetko od otvorenia dverí bez ovládača až po subkutánne sledovanie ich hladín glukózy.
+
+Pre niektorých mlynčekov, napríklad Zoltana Istvána, ktorý kandidoval na prezidenta ako šéf Transhumanistickej strany, je implantácia zábavná a pohodlná: „Vyrástol som, že si na tejto technológii pochutnám a spolieham sa na ňu,“ napísal nedávno v New York Times. "Elektrický zámok na predných dverách môjho domu je vybavený snímačom čipov a je príjemné surfovať a behať bez toho, aby ste museli nosiť kľúče."
+
+</p><p>
+Komunita biohackingu ponúka práve toto: komunitu. Dáva ľuďom šancu preskúmať nekonvenčné myšlienky v nehierarchickom prostredí a pretaviť pocit, že sú mimo normy, do chladnej identity. Biohackers sa združujú v špecializovaných online sieťach, v skupinách Slack a WhatsApp - napríklad WeFast je určený pre občasné pôstničky. Osobne uskutočňujú experimenty a absolvujú kurzy v „hacklabs“, improvizovaných laboratóriách, ktoré sú prístupné verejnosti, a zúčastňujú sa ktorejkoľvek z desiatok konferencií o biologickom hackingu, ktoré sa každý rok konajú.
+</p></h4>
+<p>zdroj:[https://www.vox.com]</p>
+</div>
+</div>
+</div>
+
+        </section>
+
+        </body>
+
+{% endblock %}
