@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn flaskr:app
+web: gunicorn flaskr:app
