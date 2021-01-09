@@ -4,7 +4,6 @@ click==7.1.2
 coverage==5.3.1
 Flask==1.1.2
 Flask-Mail==0.9.1
--e git+https://github.com/vianoce/stfjncr.git@f01223cab00431c0460277800d152b10476e9dd0#egg=flaskr
 gunicorn==20.0.4
 iniconfig==1.1.1
 itsdangerous==1.1.0
