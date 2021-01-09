@@ -1,45 +1,18 @@
-*.py[cod]
 
-# C extensions
-*.so
+.gitignore
 
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-lib
-lib64
-__pycache__
+venv/
 
-# Installer logs
-pip-log.txt
+*.pyc
+__pycache__/
 
-# Unit test / coverage reports
+instance/
+
+.pytest_cache/
 .coverage
-.tox
-nosetests.xml
+htmlcov/
 
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
+dist/
+build/
+*.egg-info/
 
-env
-.coverage
-MANIFEST.in
-setup.cfg
-spustenie.txt
-tests
-instance
-htmlcov
-.pytest_cache
-bulid
-dist

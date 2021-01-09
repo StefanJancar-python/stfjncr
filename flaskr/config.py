@@ -1,7 +1,1 @@
-import os
-
-
-class Config(object):
-
-SECRET_KEY = b',\xcc\xab\xb4\xa38"Z"5\xed\x85SM\x0c<'
-ADMINS = ['python89222@gmail.com']
+SECRET_KEY = b'\nN\xff{\x9d\x11S\xd5\x82=)\x14\x93\xe2Dv'

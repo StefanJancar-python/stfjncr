@@ -6,7 +6,6 @@ flaskr/auth.py
 flaskr/blog.py
 flaskr/config.py
 flaskr/db.py
-flaskr/email.py
 flaskr/routes.py
 flaskr/schema.sql
 flaskr.egg-info/PKG-INFO
@@ -31,6 +30,7 @@ flaskr/static/assets/img/bot.png
 flaskr/static/assets/img/button.png
 flaskr/static/assets/img/demo-image-01.jpg
 flaskr/static/assets/img/demo-image-02.jpg
+flaskr/static/assets/img/dna.png
 flaskr/static/assets/img/domov.png
 flaskr/static/assets/img/favicon.ico
 flaskr/static/assets/img/galaxi.jpg
@@ -47,6 +47,7 @@ flaskr/static/assets/img/pozadie1.jpg
 flaskr/static/assets/img/prihlasit.png
 flaskr/static/assets/img/robot-1.png
 flaskr/static/assets/img/robot.png
+flaskr/static/assets/img/stroj.png
 flaskr/static/assets/img/sun.png
 flaskr/static/assets/img/turtle2.svg
 flaskr/static/css/prispevky.css
@@ -60,4 +61,6 @@ flaskr/templates/auth/register.html
 flaskr/templates/blog/create.html
 flaskr/templates/blog/index.html
 flaskr/templates/blog/update.html
+flaskr/templates/clanky/dna.html
+flaskr/templates/clanky/stroj.html
 flaskr/templates/uvod/uvod.html
