@@ -33,3 +33,13 @@ nosetests.xml
 .pydevproject
 
 env
+.coverage
+MANIFEST.in
+setup.cfg
+spustenie.txt
+tests
+instance
+htmlcov
+.pytest_cache
+bulid
+dist
