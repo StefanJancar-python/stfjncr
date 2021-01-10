@@ -8,7 +8,7 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top"><div class="container">
         <img class="img-fluid mb-3 mb-lg-0" src="static/assets/img/logo.png" alt="LOGO" />
     </div></a> 
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
@@ -104,12 +104,13 @@
                     </div>
                 </div>
                 <hr class="d-none d-lg-block mb-0 ml-0"/>
-         <section id="clanky">
+         <section class="clanky-section" id="clanky">
             
                 <div class="row justify-content-center no-gutters">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
             <div class="d-flex flex-column">
-                <h1 class="text-blue mb-5">Články</h1>
+                <hr class="d-none d-lg-block mb-0 ml-0"/>
+                <h1 class="text-blue mb-5"><u>Články</u></h1>
   <div class="p-2"><a href="{{ url_for('routes.dna') }}"><h1>Biohacker</h1></a></div>
   <div class="p-2"><a href="{{ url_for('routes.stroj') }}"><h1>Človek verzus stroj</h1></a></div>
         </div>
@@ -125,13 +126,14 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-blue"></i>
                         <h2 class="text-blue mb-5">Kontaktuj ma mailom!</h2>
+                        
                         <form class="form-inline d-flex">
-                            <a href="mailto:python89222@gmail.com"></a>
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="ZADAJ EMAILOVÚ ADRESU..." />
-                            </a>
-                            <button class="btn btn-info mx-auto" type="submit">Odoslať</button>
-
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Kontaktuj ma mailom..."/> 
+                            
+                            <button class="btn btn-info mx-auto" type="submit"><a href="mailto:python89222@gmail.com">Odoslať</a></button>
+                            
                         </form>
+                    
                     </div>
                 </div>
             </div>
@@ -146,9 +148,9 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
+                                <h4 class="text-uppercase m-0">Adresa</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">01701 Považská Bystrica</div>
                             </div>
                         </div>
                     </div>
@@ -158,7 +160,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                                <div class="small text-black-50"><a href="mailto:python89222@gmail.com">python89222@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -166,17 +168,17 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <h4 class="text-uppercase m-0">Telefón</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50">+2 (222) 222-222</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
                     <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/python3.sk"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://github.com/vianoce"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </section>

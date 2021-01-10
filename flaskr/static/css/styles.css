@@ -173,12 +173,12 @@ sup {
 }
 
 a {
-  color: #64a19d;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #467370;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -10132,7 +10132,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #154ce3;
+  background-color: #fff;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10149,7 +10149,7 @@ body {
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#154ce3, 80%);
+  color: fade(#000000, 80%);
   outline: none;
   background-color: transparent;
 }
@@ -10167,12 +10167,12 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: #154ce3;
+    color: #fff;
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: #154ce3;
+    color: #000000;
   }
   #mainNav .nav-link:hover {
     color: #15e357;
@@ -10336,6 +10336,42 @@ body {
     padding: 5rem;
   }
   .blog-section .blog-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+.clanky-section {
+  padding: 10rem 0;
+  background: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.clanky-section {
+  box-shadow: 2px 2px;
+  padding: 10rem 0;
+}
+.clanky-section .featured-text {
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .clanky-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+.clanky-section .clanky-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+@media (min-width: 992px) {
+  .clanky-section .clanky-text {
+    padding: 5rem;
+  }
+  .clanky-section .clanky-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 30%;
