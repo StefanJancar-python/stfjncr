@@ -1,3 +1,7 @@
+""" Spustenie flask run 
+v spolupráci s .flaskenv
+inštalácia: pip install python-dotenv """
+
 from app import create_app
 from app.flaskr import User, Post
 
