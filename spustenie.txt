@@ -1,26 +1,35 @@
 # nasadenie na Github
 
+cd Plocha && cd stfjncr
+source venv/bin/activate
+
 export FLASK_APP=flaskr
 export FLASK_ENV=development
 flask run
-
-
-
-
-
-
-
 
 
 ###test###----pytest
 
 
 
-
-
-
-
-
 waitress-serve --call 'flaskr:create_app' ****
 
 Serving on http://0.0.0.0:8080
+
+# nasadenie na git
+
+git init
+
+git add --all .
+
+git commit -m "stfjncr"
+
+git push
+
+# python anywhere 
+
+dashboard
+open bash console
+cd stfjncr
+git pull
+
