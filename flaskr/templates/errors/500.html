@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase"><strong>An unexpected error has occurred</strong></h1>
+                    <h2 class="text-blue-50 mx-auto mt-2 mb-5">The administrator has been notified. Sorry for the inconvenience!</h2>
+                    <a class="btn btn-info js-scroll-trigger" href="{{ url_for('routes.uvod') }}">Späť na domovskú stránku!</a>
+                </div>
+            </div>
+        </header>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                	<img class="img-fluid" src="static/assets/gif/404.gif" alt="" />
+                    <h1 class="mx-auto my-0 text-uppercase"></h1>
+                    <h1 class="text-blue-50 mx-auto mt-2 mb-5">Uops?!.</h1>
+                    <a class="btn btn-info js-scroll-trigger" href="{{ url_for('routes.uvod') }}">Späť na domovskú stránku!</a>
+                </div>
+            </div>
+        </header>
+{% endblock %}
