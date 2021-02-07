@@ -7,7 +7,7 @@ venv/
 *.pyc
 __pycache__/
 
-instance/flaskr.sqlite
+instance/
 
 .pytest_cache/
 .coverage
