@@ -1,14 +1,16 @@
+
+import os
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for
+    Blueprint, flash, g, redirect, render_template, request, url_for, abort, send_from_directory
 )
 from werkzeug.exceptions import abort
+
 
 from flaskr.auth import login_required
 from flaskr.db import get_db
 
+
 bp = Blueprint('blog', __name__)
-
-
 
 @bp.route('/index')
 def index():
@@ -60,7 +62,7 @@ def get_post(id, check_author=True):
         abort(403)
 
     return post    
-
+  
 
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
 @login_required

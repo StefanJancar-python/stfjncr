@@ -32,7 +32,7 @@
       <img class="img-fluid mb-3 mb-lg-0" src="static/assets/img/logo.png" alt="" />
     </div>
 <h1>Nový príspevok</h1>
-  <form method="post">
+  <form method="post" enctype = "multipart/form-data">
     <label for="title">Titulok</label>
     <input type="text" class="fadeIn second" name="title" id="title" value="{{ request.form['title'] }}" required>
       
@@ -40,6 +40,8 @@
     <label for="body">Článok</label>
     <textarea name="body" id="body" class="form-control" rows="3">{{ request.form['body'] }}</textarea>
     <input class="fadeIn fourth" type="submit" value="Uložiť">
+    
+    
   </form>
 </div>
  </div>
