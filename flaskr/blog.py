@@ -20,7 +20,7 @@ def index():
         ' FROM post p JOIN user u ON p.author_id = u.id'
         ' ORDER BY created DESC'
     ).fetchall()
-    return render_template('blog/index.html', posts=posts)
+    return render_template('blog/index.html', posts=posts, title='Príspevky')
 
 @bp.route('/create', methods=('GET', 'POST'))
 @login_required
@@ -45,7 +45,7 @@ def create():
             db.commit()
             return redirect(url_for('blog.index'))
 
-    return render_template('blog/create.html')
+    return render_template('blog/create.html', title='Nový príspevok')
 
 def get_post(id, check_author=True):
     post = get_db().execute(
@@ -89,7 +89,7 @@ def update(id):
             db.commit()
             return redirect(url_for('blog.index'))
 
-    return render_template('blog/update.html', post=post)
+    return render_template('blog/update.html', post=post, title='Edituj')
 
 
 @bp.route('/<int:id>/delete', methods=('POST',))

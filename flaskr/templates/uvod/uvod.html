@@ -2,6 +2,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <body id="page-top">
+        {% block title %}<title>{{ title }}</title>{% endblock title %}
         <!-- Navigation-->
         {% block navbar %}
         {% include 'navigacia.html' %}
