@@ -7,14 +7,20 @@
         {% block navbar %}
         {% include 'navigacia.html' %}
         {% endblock %}
+
         <!-- UVOD-->
+
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Stefan Jancar</h1>
                     <h2 class="text-blue-50 mx-auto mt-2 mb-5">Vitajte na mojej stránke.</h2>
                     <a class="btn btn-info js-scroll-trigger" href="{{ url_for('blog.index') }}">Napíš príspevok</a><hr>
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <a class="btn btn-info js-scroll-trigger" href="{{ url_for('routes.cnctutorial') }}">Vytvor si cnc</a>
+              <hr>
+         <!--Príspevok-->
+
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
         <input type="hidden" name="hosted_button_id" value="K55WRTU6QHBYS" />
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="        submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
         <img alt="" border="0" src="https://www.paypal.com/en_SK/i/scr/pixel.gif" width="1" height="1" />
@@ -24,6 +30,7 @@
         </header>
 
         <!-- O MNE-->
+
         <section class="about-section text-center" id="about">
             <div class="container">
                 <div class="row">
@@ -39,17 +46,20 @@
                             Mojím koníčkom je aj <strong>robotika ktorej sa tiež venujem</strong>.
                             Túto stránku som vytvoril ako projekt svojích doterajších skuseností
                             v programovaní webových stránok vo Flasku.
-                        </p>
-                         
+                        </p>    
                     </div>
                 </div>
                 <img class="img-fluid" src="static/assets/img/about-bot.png" alt="" />
             </div>
         </section>
+
         <!-- PROJEKTY-->
+
         <section class="projects-section bg-light" id="projects">
             <div class="container">
-                <!-- Featured Project Row-->
+
+                <!-- Rada vybraných projektov-->
+
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/assets/img/robot.png" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
@@ -60,7 +70,9 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- PROJEKT JEDEN-->
+
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="static/assets/img/bot-2.png" alt="" /></div>
                     <div class="col-lg-6">
@@ -76,7 +88,9 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- PROJEKT DVA-->
+
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-6"><img class="img-fluid" src="static/assets/img/robot-1.png" alt="" /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -94,22 +108,23 @@
                     </div>
                 </div>
                 <hr class="d-none d-lg-block mb-0 ml-0"/>
-         <section class="clanky-section" id="clanky">
-            
+    <section class="clanky-section" id="clanky">
                 <div class="row justify-content-center no-gutters">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
             <div class="d-flex flex-column">
                 <hr class="d-none d-lg-block mb-0 ml-0"/>
                 <h1 class="text-blue mb-5"><strong>Články</strong></h1>
-  <div class="p-2"><a href="{{ url_for('routes.dna') }}"><h1><span style="color:  #2fa57e; text-indent: 50px; ">&quot;Biohacker&quot;</span></h1></a></div>
-  <div class="p-2"><a href="{{ url_for('routes.stroj') }}"><h1><span style="color: #6dbba1; text-indent: 50px;">&quot;Človek verzus stroj&quot;</span></h1></a></div><div class="p-2"><a href="{{ url_for('routes.sanity_blog') }}"><h1><span style="color: #6dbba1; text-indent: 50px;">&quot;Sanity blog tutoriál&quot;</span></h1></a></div>
-        </div>
-    </div>
+            <div class="p-2"><a href="{{ url_for('routes.dna') }}"><h1><span style="color:  #2fa57e; text-indent: 50px; ">&quot;Biohacker&quot;</span></h1></a></div>
+            <div class="p-2"><a href="{{ url_for('routes.stroj') }}"><h1><span style="color: #6dbba1; text-indent: 50px;">&quot;Človek verzus stroj&quot;</span></h1></a></div><div class="p-2"><a href="{{ url_for('routes.sanity_blog') }}"><h1><span style="color: #6dbba1; text-indent: 50px;">&quot;Sanity blog tutoriál&quot;</span></h1></a></div>
+           </div>
+       </div>
     </div>  
 </section>
             </div>
         </section>
+
         <!-- EMAIL-->
+
         <section class="signup-section" id="signup">
             <div class="container">
                 <div class="row">
@@ -126,8 +141,8 @@
             </div>
         </section>
         
-        
         <!-- KONTAKT-->
+
         <section class="contact-section bg-white">
             <div class="container">
                 <div class="row">
@@ -170,8 +185,8 @@
             </div>
         </section>
 
-        
         <!-- PÄTA-->
+
         <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Stefan Jancar 2020</div></footer>
     </body>
 

@@ -29,6 +29,12 @@ def odkazy():
 	return render_template('odkazy/odkazy.html', title="Flask odkazy")
 
 
+@bp.route('/cnctutorial')
+def cnctutorial():
+	return render_template('cnc_tutorial/cnc.html', title="Cnc tutoriál")
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-# nasadenie na Github
+ # nasadenie na Github
 
 cd Plocha && cd stfjncr
 source venv/bin/activate

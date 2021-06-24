@@ -10507,6 +10507,16 @@ body {
   color: #fff;
 }
 
+.section-container {
+    word-wrap: break-word;
+    word-break: break-word;
+    background: #fff;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+
 .footer {
   padding: 5rem 0;
 }
