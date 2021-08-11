@@ -13,6 +13,17 @@ def uvod():
 @bp.route('/blog')
 def sanity_blog():
 	return render_template('clanky/sanity.html', title="Sanity blog")
+
+@bp.route('/cv')
+def cv():
+                                                           
+	return render_template('uvod/cv.html', title="CV")
+
+@bp.route('/kurzy')
+def kurzy():
+                                                           
+	return render_template('uvod/kurzy.html', title="KURZY")
+
 	
 
 
