@@ -13,18 +13,23 @@
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Stefan Jancar</h1>
+                    <h1 class="mx-auto my-0 text-uppercase">Štefan Jančár</h1>
                     <h2 class="text-blue-50 mx-auto mt-2 mb-5">Vitajte na mojej stránke.</h2>
-                    <a class="btn btn-info js-scroll-trigger" href="{{ url_for('blog.index') }}">Napíš príspevok</a><hr>
+                    <p>
+                    <a class="btn btn-info js-scroll-trigger" href="{{ url_for('blog.index') }}">Fórum</a>
+                     </p>
+                    <p>
                     <a class="btn btn-info js-scroll-trigger" href="{{ url_for('routes.cnctutorial') }}">Vytvor si cnc</a>
-              <hr>
+                    </p>
          <!--Príspevok-->
-
+      <p>
         <form action="https://www.paypal.com/donate" method="post" target="_top">
         <input type="hidden" name="hosted_button_id" value="K55WRTU6QHBYS" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="        submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" 
+        title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
         <img alt="" border="0" src="https://www.paypal.com/en_SK/i/scr/pixel.gif" width="1" height="1" />
         </form>
+      </p>
                 </div>
             </div>
         </header>
@@ -37,19 +42,19 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-blue mb-4">Volám sa Stefan Jancar</h2>
                         <p class="text-blue-50">
-                            Venujem sa programovaniu webových stránok v Pythone konkrétne
-                            vo Flasku.
-                            Táto stránka je tiež vytvorená a <strong>naprogramovaná vo Flasku</strong>, backend a
-                            frontend HTML, CSS, JS, --Bootstrap.
+                            Venujem sa programovaniu webových stránok v Pythone, Flasku, Odoo, Django.
+                            Táto stránka je vytvorená <strong>vo Flasku</strong>
                              <strong><span class="text-purple">Čítaj viac:</span></strong>
-                            <a class="text-red" href="https://flask.palletsprojects.com/en/1.1.x/"><strong><span style="color:red">Flask</strong></span></a>.
+                            <a class="text-red" href="https://flask.palletsprojects.com/en/1.1.x/"><strong>
+                                <span style="color:red">Flask</strong></span></a>.
                             Mojím koníčkom je aj <strong>robotika ktorej sa tiež venujem</strong>.
                             Túto stránku som vytvoril ako projekt svojích doterajších skuseností
-                            v programovaní webových stránok vo Flasku.
+                            v programovaní webových stránok vo Flasku.<a href="https://sanity-gatsby-blog-web-nrjaapf7.netlify.app/">
+                            Pozri tiež môj "sanity blog"</a>
                         </p>    
                     </div>
                 </div>
-                <img class="img-fluid" src="static/assets/img/about-bot.png" alt="" />
+                <img class="img-fluid" src="static/img/about-bot.png" alt="" />
             </div>
         </section>
 
@@ -61,7 +66,7 @@
                 <!-- Rada vybraných projektov-->
 
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/assets/img/robot.png" alt="" /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/img/robot.png" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Robot & AI</h4>
@@ -74,7 +79,7 @@
                 <!-- PROJEKT JEDEN-->
 
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="static/assets/img/bot-2.png" alt="" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="static/img/bot-2.png" alt="" /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -92,15 +97,19 @@
                 <!-- PROJEKT DVA-->
 
                 <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="static/assets/img/robot-1.png" alt="" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="static/img/robot-1.png" alt="" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Využitie</h4>
-                                    <li><p class="mb-0 text-white-50">Softvérová: virtuálni asistenti, softvér na analýzu obrázkov, vyhľadávače, systémy na rozpoznávanie reči a tvárí</p></li>
+                                    <li><p class="mb-0 text-white-50">
+                                        Softvérová: virtuálni asistenti, 
+                                    softvér na analýzu obrázkov, vyhľadávače, 
+                                    systémy na rozpoznávanie reči a tvárí</p></li>
                                     <hr>
-                                    <li><p class="mb-0 text-white-50">Zabudovaná v hmotných zariadeniach: roboty, samojazdiace autá, drony, internet vecí</p></li>
+                                    <li><p class="mb-0 text-white-50">Zabudovaná v hmotných zariadeniach: 
+                                    roboty, samojazdiace autá, drony, internet vecí</p></li>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -172,7 +181,7 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Telefón</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50">+2 (222) 222-222</div>
+                                <div class="small text-black-50">0000</div>
                             </div>
                         </div>
                     </div>

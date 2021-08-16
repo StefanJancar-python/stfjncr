@@ -6,43 +6,47 @@ from hashlib import md5
 bp = Blueprint('routes', __name__)
 
 @bp.route('/')
-def uvod():
-                                                           
-	return render_template('uvod/uvod.html', title="Úvod")
+@bp.route('/domov')
+def domov():
+	return render_template('domov/domov.html', title="Úvod")
 
-@bp.route('/blog')
-def sanity_blog():
-	return render_template('clanky/sanity.html', title="Sanity blog")
 
-@bp.route('/cv')
-def cv():
-                                                           
-	return render_template('uvod/cv.html', title="CV")
 
-@bp.route('/kurzy')
-def kurzy():
-                                                           
-	return render_template('uvod/kurzy.html', title="KURZY")
 
 	
 
 
 @bp.route('/dna')
 def dna():
-	return render_template('clanky/dna.html', title="Biohacker")
+	return render_template('domov/clanky/dna.html', title="Biohacker")
+
+@bp.route('/blog')
+def sanity_blog():
+	return render_template('domov/clanky/sanity.html', title="Sanity blog")
+
 
 @bp.route('/stroj')
 def stroj():
-	return render_template('clanky/stroj.html', title="Človek vs stroj")
+	return render_template('domov/clanky/stroj.html', title="Človek vs stroj")
 
 @bp.route('/odkazy')
 def odkazy():
-	return render_template('odkazy/odkazy.html', title="Flask odkazy")
+	return render_template('domov/odkazy/odkazy.html', title="Flask odkazy")
 
 
 @bp.route('/cnctutorial')
 def cnctutorial():
-	return render_template('cnc_tutorial/cnc.html', title="Cnc tutoriál")
+	return render_template('domov/cnc_tutorial/cnc.html', title="Cnc tutoriál")
+
+@bp.route('/cv')
+def cv():                                                           
+	return render_template('domov/cv.html', title="CV")
+
+@bp.route('/kurzy')
+def kurzy():
+                                                           
+	return render_template('domov/kurzy.html', title="KURZY")
+
 
 
 
