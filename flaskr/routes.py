@@ -11,11 +11,6 @@ def domov():
 	return render_template('domov/domov.html', title="Úvod")
 
 
-
-
-	
-
-
 @bp.route('/dna')
 def dna():
 	return render_template('domov/clanky/dna.html', title="Biohacker")
