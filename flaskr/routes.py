@@ -32,10 +32,11 @@ def odkazy():
 @bp.route('/cnctutorial')
 def cnctutorial():
 	return render_template('domov/cnc_tutorial/cnc.html', title="Cnc tutoriál")
-
+"""
 @bp.route('/cv')
 def cv():                                                           
 	return render_template('domov/cv.html', title="CV")
+"""	
 
 @bp.route('/kurzy')
 def kurzy():
