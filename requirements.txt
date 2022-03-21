@@ -18,5 +18,5 @@ py==1.10.0
 pyparsing==2.4.7
 pytest==6.2.1
 toml==0.10.2
-waitress==1.4.4
+waitress==2.1.1
 Werkzeug==1.0.1
